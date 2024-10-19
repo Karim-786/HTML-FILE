@@ -1,0 +1,14 @@
+function doGet() {
+  // form url is the above one in searching one's
+    var form = FormApp.openByUrl('https://docs.google.com/forms/d/1y2PRvXc4A7XndcPsVprtbb8Zev4rM8DhcqBi8njcZog/edit');
+    var isAcceptingResponses = form.isAcceptingResponses();
+    
+    // Check if the form is accepting responses
+    if (isAcceptingResponses) {
+      return ContentService.createTextOutput(JSON.stringify({ status: 'available' }))
+                           .setMimeType(ContentService.MimeType.JSON);
+    } else {
+      return ContentService.createTextOutput(JSON.stringify({ status: 'unavailable' }))
+                           .setMimeType(ContentService.MimeType.JSON);
+    }
+}
