@@ -1,69 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <style>
-    .available { color: green; }
-    .unavailable { color: red; }
-    .disabled { 
-      pointer-events: none;
-      opacity: 0.5; 
-      cursor: not-allowed; 
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ample 2K24 Event</title>
+    <link rel="stylesheet" href="me.css">
+    <script src="to.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="me3.jpg" alt="SVCE Tirupati">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sign in/Login</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div id="slotMessage"></div>
-  <a id="formLink" href="https://forms.gle/kAzbFNtFQz5VpJE16" target="_blank" class="disabled">Open Form</a>
+    <main>
+        <h1>AMPLE 2K24</h1>
+        
+        <div class="event-info">
+            <div class="registernow">
+                <img id="register" src="me6.jpg" alt="Register Now Image">
+                <h2>Welcome all,</h2>
+                <p>Showcase your talent with this opportunity. Participate in your interested fields.</p>
+                <h3 id="slot-status">Slots Available</h3>
+                <a href="#" id="registerlink">Click here to register for the event</a>
+            </div>
 
-  <script>
-    let formStatus = 'unavailable'; 
-
-    function checkFormStatus() {
-      const scriptUrl = 'https://script.google.com/macros/s/AKfycbwNFMqL61iNgL3RGVum9UT6S_NzoGCFDVPTnCVKmR4qYqRXMqHNlTsw7XYaYVqoMill-g/exec';
-      //deployment weburl
-      fetch(scriptUrl)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-          }
-          return response.json();
-        })
-        .then(data => {
-          const slotMessage = document.getElementById('slotMessage');
-          const formLink = document.getElementById('formLink');
-  
-          if (data.status === 'available') {
-            slotMessage.textContent = 'Slots Available';
-            slotMessage.classList.remove('unavailable');
-            slotMessage.classList.add('available');
-            formStatus = 'available'; 
-
-            formLink.classList.remove('disabled');
-            formLink.style.pointerEvents = 'auto';
-            formLink.style.opacity = '1';        
-            formLink.style.cursor = 'pointer';    
-          } else {
-            slotMessage.textContent = 'Slots Unavailable';
-            slotMessage.classList.remove('available');
-            slotMessage.classList.add('unavailable');
-            formStatus = 'unavailable'; 
-
-            formLink.classList.add('disabled');
-            formLink.style.pointerEvents = 'none';  
-            formLink.style.opacity = '0.5';     
-            formLink.style.cursor = 'not-allowed';  
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching form status:', error);
-          const slotMessage = document.getElementById('slotMessage');
-          slotMessage.textContent = 'Error fetching form status. Please try again later.';
-          slotMessage.classList.add('unavailable');
-        });
-    }
-    window.onload = checkFormStatus;
-  </script>
-
+            <div class="event-image">
+                <img src="me2.jpg" alt="Technical Quiz Image">
+                <h3 id="quiz">Technical Quiz</h3>
+                <p>Register to participate</p>
+            </div>
+        </div>
+    </main>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Registration is closed. Slots are unavailable.</p>
+        </div>
+    </div>
 </body>
 </html>
