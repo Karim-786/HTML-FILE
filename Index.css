@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('me4.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    width: 90%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 3rem;
+    color: #00eeff;
+    text-shadow: 0 0 10px #00eeff;
+}
+
+.event-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.event-image, .registernow {
+    width: 40%;
+    padding: 20px;
+    background: rgba(211, 203, 203, 0.1);
+    border-radius: 15px;
+}
+
+.event-image img, .registernow img {
+    width: 100%;
+    border-radius: 15px;
+    width: 70%;
+    height: 70%;
+}
+
+.event-image h3 {
+    font-size: 1.5rem;
+    color: #00ff26;
+    text-shadow: 0 0 10px #ff0;
+}
+
+.event-image p {
+    color: #aaa;
+}
+
+.registernow h2 {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.registernow p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.registernow h3 {
+    font-size: 2rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+#registerlink {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ff007f;
+    text-decoration: none;
+}
+
+#registerlink:hover {
+    color: #ff0;
+    text-shadow: 0 0 10px #ff0;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .event-info {
+        flex-direction: column;
+    }
+
+    .event-image, .registernow {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .event-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-image, .registernow {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .event-image h3, .registernow h3 {
+        font-size: 1.8rem;
+    }
+
+    .registernow h2, .registernow p {
+        font-size: 1rem;
+    }
+
+    #registerlink {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    .event-image h3, .registernow h3 {
+        font-size: 1.5rem;
+    }
+
+    .event-image img, .registernow img {
+        width: 100%;
+        height: auto;
+    }
+
+    .registernow h2, .registernow p {
+        font-size: 0.9rem;
+    }
+
+    #registerlink {
+        font-size: 0.9rem;
+    }
+}
+
