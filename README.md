@@ -16,12 +16,12 @@ This project demonstrates practical implementation of Large Language Models (LLM
 
 ## 🚀 Features
 
--✍️ AI-powered recipe blog generation
--📏 Custom word count selection
--😂 Random programmer joke during generation
--⚡ Fast response using Gemini 2.5 Flash
--🧩 Clean and interactive Streamlit UI
--❗ Error handling and API integration
+- ✍️ AI-powered recipe blog generation
+- 📏 Custom word count selection
+- 😂 Random programmer joke during generation
+- ⚡ Fast response using Gemini 2.5 Flash
+- 🧩 Clean and interactive Streamlit UI
+- ❗ Error handling and API integration
 
 ## 🏗️ System Architecture
 
