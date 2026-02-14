@@ -14,6 +14,7 @@ Users can:
 
 This project demonstrates practical implementation of Large Language Models (LLMs) in cloud application development.
 
+---
 ## 🚀 Features
 
 - ✍️ AI-powered recipe blog generation
@@ -22,7 +23,8 @@ This project demonstrates practical implementation of Large Language Models (LLM
 - ⚡ Fast response using Gemini 2.5 Flash
 - 🧩 Clean and interactive Streamlit UI
 - ❗ Error handling and API integration
-
+ 
+---
 ## 🏗️ System Architecture
 
 ```bash
@@ -219,3 +221,4 @@ Flavour Fusion demonstrates real-world integration of:
 - NLP
 - Interactive Web Applications(Streamlit)
 It is a scalable and modern AI-powered content generation platform designed to simplify recipe blogging.
+---
