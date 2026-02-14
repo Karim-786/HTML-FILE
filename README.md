@@ -4,14 +4,13 @@ An AI-powered cloud application that generates customized and structured recipe 
 
 ---
 ## 📌 Project Overview
-Flavour Fusion is a web-based application built using Streamlit and Google Generative AI (Gemini 1.5 Flash) that automatically generates detailed recipe blogs based on user input.
+Flavour Fusion is a web-based application built using Streamlit and Google Generative AI (Gemini 2.5 Flash) that automatically generates detailed recipe blogs based on user input.
 
 Users can:
-
--Enter a recipe topic
--Specify desired word count
--Generate AI-written recipe blogs
--Enjoy a programmer joke while content is being generated
+- Enter a recipe topic
+- Specify desired word count
+- Generate AI-written recipe blogs
+- Enjoy a programmer joke while content is being generated
 
 This project demonstrates practical implementation of Large Language Models (LLMs) in cloud application development.
 
@@ -206,17 +205,17 @@ Deploy using:
 ---
 ## 📚 Prior Knowledge Required
 
--Basics of Large Language Models (LLMs)
--Google Gemini API usage
--Python fundamentals
--Streamlit framework basic
+- Basics of Large Language Models (LLMs)
+- Google Gemini API usage
+- Python fundamentals
+- Streamlit framework basic
 
 ---
 ## 🏁 Conclusion
 
 Flavour Fusion demonstrates real-world integration of:
--Generative AI
--Cloud APIs
--NLP
--Interactive Web Applications(Streamlit)
+- Generative AI
+- Cloud APIs
+- NLP
+- Interactive Web Applications(Streamlit)
 It is a scalable and modern AI-powered content generation platform designed to simplify recipe blogging.
